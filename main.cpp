@@ -51,6 +51,12 @@ send me a DM to check your pull request
 #include <vector>
 #include <algorithm>
 #include <cassert>
+#include "Car.h"
+#include "Vehicle.h"
+#include "Highway.h"
+#include "HighwayPatrol.h"
+#include "Motorcycle.h"
+#include "SemiTruck.h"
 
 int main()
 {

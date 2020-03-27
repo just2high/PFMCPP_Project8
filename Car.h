@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include "Vehicle.h"
 
 struct Car : public Vehicle
 {
