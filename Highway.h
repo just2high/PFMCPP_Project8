@@ -1,5 +1,5 @@
 #pragma once
-
+#include "HighwayPatrol.h"
 #include <vector>
 #include <algorithm>
 
@@ -14,4 +14,5 @@ private:
     void removeVehicleInternal(Vehicle* v);
     int speedLimit = 65;
     std::vector<Vehicle*> vehicles;
+    friend HighwayPatrol;
 };
