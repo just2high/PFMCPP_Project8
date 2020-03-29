@@ -19,11 +19,11 @@ void Highway::addVehicleInternal(Vehicle* v)
     //assert(false);
 
     if( auto* car = dynamic_cast<Car*>(v) )
-        car->tryToEvade();
+        car->closeWindows();
     else if( auto* motorcycle = dynamic_cast<Motorcycle*>(v) )
-        motorcycle->tryToEvade();
+        motorcycle->setSpeed(100);
     else if( auto* truck = dynamic_cast<SemiTruck*>(v) )
-        truck->setSpeed(speedLimit);
+        truck->closeWindows();
 
     /*
     depending on the derived type, call the member function that doesn't evade the cops. 
