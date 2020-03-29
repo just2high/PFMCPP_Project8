@@ -39,7 +39,7 @@ void Highway::removeVehicleInternal(Vehicle* v)
     else if( auto* motorcycle = dynamic_cast<Motorcycle*>(v) )
         motorcycle->lanesplitAndRace();
     else if( auto* truck = dynamic_cast<SemiTruck*>(v) )
-        truck->tryToEvade();
+        truck->pullOver();
     /*
     depending on the derived type, call the member function that tries to evade the cops. 
 

@@ -1,9 +1,10 @@
 #pragma once
-#include "HighwayPatrol.h"
+//#include "HighwayPatrol.h"
 #include <vector>
 #include <algorithm>
 
 struct Vehicle;
+struct HighwayPatrol;
 struct Highway
 {
     void changeSpeed(int newSpeed);

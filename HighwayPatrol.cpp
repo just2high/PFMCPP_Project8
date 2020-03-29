@@ -34,16 +34,16 @@ void HighwayPatrol::pullOver( Vehicle* v, bool willArrest, Highway* h )
     {
         //print the vehicle type in this std::cout between "THE [" and "] PULL". 
 
-        std::cout << name << ": YOU IN THE [ "; 
-        
+        std::string vehicleType;
+
         if( dynamic_cast<Car*>(v) )
-            std::cout << "Car";
+            vehicleType = "Car";
         if( dynamic_cast<Motorcycle*>(v) )
-                std::cout << "Motorcycle";
+            vehicleType = "Motorcycle";
         if( dynamic_cast<SemiTruck*>(v) )
-            std::cout << "Truck";
-        
-        std::cout << " ] PULL OVER AND SHOW YOUR HANDS" << std::endl;
+            vehicleType =  "Truck";
+
+        std::cout << name << ": YOU IN THE [ " << vehicleType << " ] PULL OVER AND SHOW YOUR HANDS" << std::endl;
         std::cout << "EVERYONE ELSE, SLOW DOWN!! \n\n\n";
         h->removeVehicle(v);
     }
