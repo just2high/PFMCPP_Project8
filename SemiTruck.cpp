@@ -15,7 +15,4 @@ void SemiTruck::pullOver()
     std::cout << name << ": I'm stopping please don't arrest me!\n" << std::endl;
 }
 
-void SemiTruck::tryToEvade() 
-{
-    pullOver();
-}
+void SemiTruck::tryToEvade() {}
