@@ -9,6 +9,4 @@ struct SemiTruck : public Vehicle
     void closeWindows();
     
     void pullOver();
-
-    void tryToEvade() override;
 };
