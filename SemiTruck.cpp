@@ -14,3 +14,9 @@ void SemiTruck::pullOver()
     setSpeed(0);
     std::cout << name << ": I'm stopping please don't arrest me!\n" << std::endl;
 }
+
+SemiTruck::SemiTruck(const SemiTruck&) = default;
+
+SemiTruck& SemiTruck::operator=(const SemiTruck&) = default;
+
+SemiTruck::~SemiTruck(){}
