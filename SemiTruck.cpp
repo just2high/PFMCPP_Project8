@@ -19,4 +19,4 @@ SemiTruck::SemiTruck(const SemiTruck&) = default;
 
 SemiTruck& SemiTruck::operator=(const SemiTruck&) = default;
 
-SemiTruck::~SemiTruck(){}
+SemiTruck::~SemiTruck() = default;
